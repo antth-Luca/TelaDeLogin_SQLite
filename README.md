@@ -5,7 +5,7 @@ Tela de login com Python e SQLite.
  
  Início 08/06/2023 - Término //
  
-    Login: |Senha:
+    Login: admin_Luca |Senha: 12345678
   ***
 ## Segunda parte
  
