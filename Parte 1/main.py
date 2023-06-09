@@ -19,6 +19,7 @@ def saindo():
 app = QtWidgets.QApplication([])
 primTela = uic.loadUi('primeiraJanela.ui')
 segTela = uic.loadUi('segundaJanela.ui')
+primTela.lineEdit_3.setEchoMode(QtWidgets.QLineEdit.Password)
 
 primTela.pushButton.clicked.connect(enviando)
 segTela.pushButton.clicked.connect(saindo)
