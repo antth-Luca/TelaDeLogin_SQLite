@@ -9,11 +9,11 @@ Tela de login com Python e SQLite.
   ***
 ## Segunda parte: Cadastro com SQLite
  
- Início 10/06/2023 - Término //
+ Início 10/06/2023 - Término 10/06/2023
  
   ***
-## Terceira parte
+## Terceira parte: Criptografia e verificação de login e senha
 
- Início // - Término //
+ Início 10/06/2023 - Término //
  
   ***
