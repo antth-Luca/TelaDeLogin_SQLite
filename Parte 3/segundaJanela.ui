@@ -55,7 +55,7 @@ border-width: 0px;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Usuário.png</pixmap>
+     <pixmap>Perfil64.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -74,9 +74,9 @@ border-width: 0px;</string>
    <widget class="QLabel" name="msg_logado">
     <property name="geometry">
      <rect>
-      <x>126</x>
+      <x>6</x>
       <y>170</y>
-      <width>232</width>
+      <width>471</width>
       <height>31</height>
      </rect>
     </property>
@@ -87,6 +87,9 @@ border-width: 0px;</string>
     </property>
     <property name="text">
      <string>adimin_Luca está logado</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

@@ -95,14 +95,17 @@ color: rgb(114, 75, 17);</string>
    <widget class="QLabel" name="msg_erro">
     <property name="geometry">
      <rect>
-      <x>131</x>
+      <x>11</x>
       <y>280</y>
-      <width>222</width>
+      <width>461</width>
       <height>91</height>
      </rect>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="imagem_login">
