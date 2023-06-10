@@ -3,33 +3,55 @@ import sqlite3 as sql
 
 
 def logar():
+    # Atribuindo Login e Senha digitados pelo usuário a variáveis
     login = primTela.login.text()
     senha = primTela.senha.text()
-    try:            # Tentando conectar ao banco
+    try:
+        # Tentando conectar ao banco
         banco = sql.connect('banco_cadastro.db')
         cursor = banco.cursor()
     except:
         primTela.msg_erro.setText('Sem conexão com o banco de dados')
     else:
-        try:     # Validando usuário
-            cursor.execute(f'SELECT senha FROM cadastro WHERE login = "{login}" IF EXISTS login = "{login}"')
-            senha_bd = cursor.fetchall()
-
-            banco.close()
+        try:
+            # Solicitando logins do banco
+            cursor.execute('SELECT login FROM cadastro')
         except:
-            primTela.msg_erro.setText('Usuário incorreto')
+            primTela.msg_erro.setText('Conexão interrompida. Não consegui verificar seu login')
         else:
-            try:   # Validando senha
-                senha == senha_bd[0][0]
-            except:
-                primTela.msg_erro.setText('Senha incorreta')
-            else:       # Abrindo segunda tela
-                segTela.msg_logado.setText(f'{login} está logado')
-                primTela.close()
-                segTela.show()
+            # Atribuindo login do banco a uma variável
+            logins_bd = cursor.fetchall()
+
+            # Validando login
+            for c in range(0, len(logins_bd)):
+                if login == logins_bd[c][0]:
+                    primTela.msg_erro.setText('')
+                    try:
+                        # Solicitando senha do login digitado pelo usuário
+                        cursor.execute(f'SELECT senha FROM cadastro WHERE login = "{login}"')
+                    except:
+                        primTela.msg_erro.setText('Conexão interrompida. Não consegui verificar a senha')
+                    else:
+                        # Atribuindo senha do banco a uma variável
+                        senha_bd = cursor.fetchall()
+
+                        # Validando senha. Se True executar segunda tela
+                        if senha == senha_bd[0][0]:
+                            segTela.msg_logado.setText(f'{login} está logado')
+                            primTela.close()
+                            segTela.show()
+                        else:
+                            primTela.msg_erro.setText('Senha incorreta')
+                    break
+            else:
+                primTela.msg_erro.setText('Login incorreto')
+        finally:
+            # Fechando banco de dados
+            banco.close()
 
 
 def deslogar():
+    primTela.msg_erro.setText('')
     segTela.close()
     primTela.show()
 
