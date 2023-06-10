@@ -1,5 +1,3 @@
-# Parte 1: Sem banco de dados
+# Parte 2: Cadastro com SQLite
 
-Início 08/06/2023 - Término 08/06/2023
-
-    Login: admin_Luca |Senha: 12345678
+Início 10/06/2023 - Término //
