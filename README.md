@@ -9,7 +9,7 @@ Tela de login com Python e SQLite.
   ***
 ## Segunda parte
  
- Início // - Término //
+ Início 10/06/2023 - Término //
  
   ***
 ## Terceira parte
