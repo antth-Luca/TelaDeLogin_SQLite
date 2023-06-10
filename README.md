@@ -12,8 +12,8 @@ Tela de login com Python e SQLite.
  Início 10/06/2023 - Término 10/06/2023
  
   ***
-## Terceira parte: Criptografia e verificação de login e senha
+## Terceira parte: Verificação de login e senha
 
- Início 10/06/2023 - Término //
+ Início 10/06/2023 - Término 10/06/2023
  
   ***
