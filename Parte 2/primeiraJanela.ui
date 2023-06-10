@@ -18,7 +18,7 @@
 background-color: rgb(253, 254, 232);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="login">
     <property name="geometry">
      <rect>
       <x>138</x>
@@ -33,8 +33,11 @@ border-radius: 15px;
 border-style: outset;
 border-width: 2px;</string>
     </property>
+    <property name="placeholderText">
+     <string>Login</string>
+    </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="botao_entrar">
     <property name="geometry">
      <rect>
       <x>278</x>
@@ -53,7 +56,7 @@ border-width: 0px;</string>
      <string>Entrar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="botao_cadastre">
     <property name="geometry">
      <rect>
       <x>248</x>
@@ -72,7 +75,7 @@ border-width: 0px;</string>
      <string>Cadastre-se agora!</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="msg_semCadatro">
     <property name="geometry">
      <rect>
       <x>135</x>
@@ -89,7 +92,7 @@ color: rgb(114, 75, 17);</string>
      <string>Não está cadastrado?</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="msg_erro">
     <property name="geometry">
      <rect>
       <x>131</x>
@@ -102,7 +105,7 @@ color: rgb(114, 75, 17);</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="imagem_login">
     <property name="geometry">
      <rect>
       <x>104</x>
@@ -118,7 +121,7 @@ color: rgb(114, 75, 17);</string>
      <pixmap>Perfil.png</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="imagem_senha">
     <property name="geometry">
      <rect>
       <x>104</x>
@@ -134,7 +137,7 @@ color: rgb(114, 75, 17);</string>
      <pixmap>Chave.png</pixmap>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="senha">
     <property name="geometry">
      <rect>
       <x>138</x>
@@ -149,8 +152,11 @@ border-radius: 15px;
 border-style: outset;
 border-width: 2px;</string>
     </property>
+    <property name="placeholderText">
+     <string>Senha</string>
+    </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="by">
     <property name="geometry">
      <rect>
       <x>211</x>
@@ -161,6 +167,24 @@ border-width: 2px;</string>
     </property>
     <property name="text">
      <string>by antthLuca</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="instrucao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Preencha os campos abaixo e clique no botão para entrar:</string>
     </property>
    </widget>
   </widget>
