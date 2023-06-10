@@ -7,7 +7,7 @@ Tela de login com Python e SQLite.
  
     Login: admin_Luca |Senha: 12345678
   ***
-## Segunda parte
+## Segunda parte: Cadastro com SQLite
  
  Início 10/06/2023 - Término //
  
